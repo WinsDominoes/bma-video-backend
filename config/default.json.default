@@ -1,0 +1,7 @@
+{
+    "aspToken": "",
+    "server": {
+        "port": 1218,
+        "host": "localhost"
+    }
+}
