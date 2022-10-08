@@ -40,6 +40,8 @@ app.get('/img', (req2, res2) => {
         res2.json({
             "error": 0,
             "response": 200,
+            "camId": camId,
+            "time": time, 
             "image": base64data
         })
 
