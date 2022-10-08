@@ -3,9 +3,15 @@ const unirest= require('unirest')
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser');
+const cors = require('cors');
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(cors({
+    origin: '*'
+}));
 
 const token = config.get("aspToken");
 const port = config.get("server.port");
